@@ -18,7 +18,10 @@
 
 /* Portfolio Layout */
 .portfolio-section {
-  padding: 5rem 0;
+  padding-left: 3.4rem;
+  padding-right: 3.2rem;
+  margin: auto;
+  padding-top: 5rem;
   position: relative;
   z-index: 10;
 }
@@ -26,7 +29,7 @@
 .portfolio-container {
   max-width: 1400px;
   margin: auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 .portfolio-grid {
@@ -68,7 +71,7 @@
 }
 
 /* Tags */
-.badge {
+.badge2 {
   background: #ffffff;
   padding: 0.35rem 0.75rem;
   border-radius: 1rem;

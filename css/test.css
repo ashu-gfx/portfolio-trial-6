@@ -1,0 +1,117 @@
+@media (min-width: 320px) {
+  .hero-top p {
+    font-size: 0.8rem;
+    padding-left: 1.3rem;
+    padding-top: 3rem;
+  }
+
+  .hero-title,
+  .hero-title-secondary {
+    padding-left: 1.3rem;
+    font-size: 2rem;
+  }
+
+  .hero-row {
+    padding-left: 1.3rem;
+    gap: 0rem;
+  }
+
+  .hero-badge {
+    width: 5rem;
+    height: 2.5rem;
+  }
+
+  .hero {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero-images {
+    padding-top: 20vw;
+    display: block;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .hero-images .circles {
+    top: 35%;
+    right: 26%;
+    position: absolute;
+    transform: rotate(-4.02deg);
+    width: 382.82px;
+    height: 204.55px;
+    z-index: -1;
+  }
+
+  .hero-big-name{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14vw;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    line-height: 0.8;
+    margin-top: 2rem;
+    letter-spacing: -0.8px;
+    /* mix-blend-mode: exclusion; */
+
+  }
+
+  .img-orange {
+    
+    left: 12%;
+    position: absolute;
+    width: clamp(10rem, 8.5rem + 0.78vw, 12rem);
+    height: clamp(13rem, 7.8rem + 1.95vw, 18rem);
+    transform: rotate(-14.86deg);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+  }
+
+  .img-main {
+     left: 38%;
+    /* justify-self: center; */
+    object-fit: cover;
+    position: absolute;
+
+    right: clamp(24%, 11% + 1.95vw, 10%);
+
+    width: clamp(10rem, 8.5rem + 0.78vw, 14rem);
+    height: clamp(14rem, 7.8rem + 1.95vw, 20rem);
+    /* background: #111; */
+    transform: rotate(9.54deg);
+    overflow: hidden;
+    /* border: 4px solid #fff; */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+@media (min-width: 320px) {
+  .logo {
+    font-size: 1.4rem;
+    justify-self: flex-start;
+    padding-left: 1.3rem;
+  }
+
+  .container {
+    width: 100vw;
+    margin-right: 0vw;
+    padding-right: 0vw;
+  }
+
+  header {
+    width: 100vw;
+    margin-right: 0vw;
+    padding-right: 0vw;
+  }
+
+  .center-info {
+    /* display: none; */
+    /* gap: 0.5rem; */
+    font-size: 0.7rem;
+    color: #414141;
+    font-weight: 500;
+  }
+}

@@ -68,7 +68,7 @@ portfolioItems.forEach(item => {
         <img src="${item.imageUrl}" alt="${item.title}" />
 
         <div class="tag-container">
-          ${item.tags.map(tag => `<span class="badge">${tag}</span>`).join('')}
+          ${item.tags.map(tag => `<span class="badge2">${tag}</span>`).join('')}
         </div>
       </div>
 

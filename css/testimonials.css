@@ -17,20 +17,19 @@
 
 .marquee-container {
   position: relative;
-  z-index: 10;
+  overflow: hidden;
   width: 100%;
-  display: flex;
 }
+
 
 .marquee-track {
   display: flex;
   align-items: center;
   gap: 3rem;
   white-space: nowrap;
-  min-width: 100%;
-  padding-left: 1rem;
-  animation: marquee 40s linear infinite;
-  opacity: 0.9;
+  width: max-content; /* VERY IMPORTANT */
+  /* animation: marquee 18s linear infinite; */
+  will-change: transform;
 }
 
 .marquee-track:hover {
@@ -52,10 +51,10 @@
 .testimonial-avatar {
   width: 3.5rem;
   height: 3.5rem;
-  border-radius: 50%;
+  border-radius: 25%;
   object-fit: cover;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  /* border: 2px solid #fff; */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); */
 }
 
 .testimonial-text {
@@ -65,12 +64,31 @@
   letter-spacing: -0.5px;
 }
 
+.fade {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #f9fafb, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #f9fafb, transparent);
+}
+
 /* Animation */
 @keyframes marquee {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }

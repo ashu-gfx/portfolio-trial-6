@@ -4,28 +4,10 @@
   /* border-top: 1px solid #eee; */
 }
 
-@media (min-width: 1024px) {
-  .stats-section {
-    /* padding: 5rem 1rem; */
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 2.6rem;
-    padding-right: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .stats-section {
-    /* padding: 5rem 1rem; */
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 2.6rem;
-    padding-right: 2.5rem;
-  }
-}
-
 /* Container */
 .stats-container {
+  /* align-items: start; */
+  /* justify-content: flex-start; */
   max-width: 1440px;
   margin: 0 auto;
   display: grid;
@@ -33,25 +15,14 @@
   gap: 3rem;
 }
 
-@media (min-width: 768px) {
-  .stats-container {
-    grid-template-columns: 1fr 3fr;
-    padding: 0 2rem;
-  }
-}
-
 /* Description text */
 .stats-description p {
+  align-self: self-start;
+  /* margin-top: -0.3rem; */
   font-family: 'Poppins', sans-serif;
   font-size: 0.4rem;
   color: #666;
   line-height: 1.7;
-}
-
-@media (min-width: 768px) {
-  .stats-description p {
-    font-size: 0.8rem;
-  }
 }
 
 .divider {
@@ -66,13 +37,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-  }
 }
 
 /* Individual stat box */
@@ -97,8 +61,409 @@
   color: #000;
 }
 
-@media (min-width: 768px) {
+.text-mask1 {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.text-inner1 {
+  display: inline-block;
+}
+
+@media (min-width: 300px) {
+  .stats-section {
+    padding-top: 1.8rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    /* padding: 1.1rem 1.8rem; */
+    /* border-top: 1px solid #eee; */
+  }
+
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: clamp(2rem, 1.2rem + 2.7vw, 4.3rem);
+    padding-right: clamp(2rem, 1.4rem + 2.1vw, 4rem);
+    /* background-color: dodgerblue; */
+  }
+
+  .stat-box {
+    align-items: center;
+    justify-content: center;
+    /* max-width: 30vw; */
+    text-align: center;
+  }
+
+  .stats-description p {
+    font-size: 0.6rem;
+  }
   .stat-value {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 350px) {
+  .stats-section {
+    padding-top: 1.8rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    /* padding: 1.1rem 1.8rem; */
+    /* border-top: 1px solid #eee; */
+  }
+
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: clamp(2rem, 1.2rem + 2.7vw, 4.3rem);
+    padding-right: clamp(2rem, 1.4rem + 2.1vw, 4rem);
+    /* background-color: dodgerblue; */
+  }
+
+  .stat-box {
+    align-items: center;
+    justify-content: center;
+    /* max-width: 30vw; */
+    text-align: center;
+  }
+
+  .stats-description p {
+    font-size: 0.6rem;
+  }
+  .stat-value {
+    font-size: 4rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .stats-section {
+    padding-top: 1.8rem;
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    /* padding: 1.1rem 1.8rem; */
+    /* border-top: 1px solid #eee; */
+  }
+
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: clamp(2rem, 1.2rem + 2.7vw, 4.3rem);
+    padding-right: clamp(2rem, 1.4rem + 2.1vw, 4rem);
+    /* background-color: dodgerblue; */
+  }
+
+  .stat-box {
+    align-items: center;
+    justify-content: center;
+    /* max-width: 30vw; */
+    text-align: center;
+  }
+
+  .stats-description p {
+    font-size: 0.6rem;
+  }
+  .stat-value {
+    font-size: 4rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .stats-section {
+    padding: 2rem 1rem;
+    /* border-top: 1px solid #eee; */
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr 3fr;
+    padding: 0 1rem;
+  }
+
+  .stats-description {
+    display: none;
+  }
+  .stats-description p {
+    font-size: 0.5rem;
+  }
+  .stats-grid {
+    /* padding-left: 0rem; */
+    /* padding: 0; */
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    flex-wrap: nowrap;
+  }
+  .stat-value {
+    font-size: 4.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .stats-container {
+    grid-template-columns: 1fr 3fr;
+    padding: 0 1.7rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .stats-container {
+    grid-template-columns: 1fr 3fr;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .stats-container {
+    grid-template-columns: 1fr 3fr;
+    padding: 0 2rem;
+  }
+
+  .stats-description {
+    display: block;
+  }
+  .stats-description p {
+    font-size: 0.44rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-self: normal;
+    justify-self: normal;
+  }
+  .stat-value {
+    font-size: 4rem;
+  }
+
+  .stat-label {
+    font-size: 0.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .stats-container {
+    grid-template-columns: 1fr 3fr;
+    padding: 0 1.7rem;
+  }
+
+  .stats-description {
+    display: block;
+  }
+  .stats-description p {
+    font-size: 0.44rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .stat-value {
+    font-size: 4rem;
+  }
+
+  .stat-label {
+    font-size: 0.4rem;
+  }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 922px) {
+  .stats-container {
+    grid-template-columns: 1fr 3fr;
+    padding: 0 0.8rem;
+  }
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 3rem;
+  }
+  .stats-description p {
+    font-size: 0.47rem;
+  }
+
+  .stat-label {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .stats-container {
+    padding: 0 1rem;
+  }
+
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 3rem;
+  }
+  .stats-description p {
+    font-size: 0.62rem;
+  }
+
+  .stat-label {
+    font-size: 0.54rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-container {
+    padding: 0 0.7rem;
+  }
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 3rem;
+  }
+  .stats-description p {
+    font-size: 0.7rem;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 1078px) {
+    .stats-container {
+    padding: 0 0.9rem;
+  }
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 3rem;
+  }
+  .stats-description p {
+    font-size: 0.7rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+}
+
+@media (min-width: 1129px) {
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 3rem;
+  }
+  .stats-description p {
+    font-size: 0.75rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1181px) {
+   .stats-container {
+    padding: 0 1rem;
+  }
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 3rem;
+  }
+  .stats-description p {
+    font-size: 0.78rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+   .stats-container {
+    padding: 0 1.4rem;
+  }
+  .stats-section {
+    /* padding: 5rem 1rem; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.6rem;
+    padding-right: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .stats-description p {
+    font-size: 0.81rem;
+  }
+}
+
+@media (min-width: 1278px) {
+  .stat-label {
+    font-size: 0.85rem;
+  }
+  .stats-description p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1326px) {
+  .stat-label {
+    font-size: 0.9rem;
+  }
+  .stats-description p {
+    font-size: 0.85rem;
+  }
+  .stats-description p {
+    font-size: 0.89rem;
+  }
+}
+
+@media (min-width: 1382px) {
+  .stat-label {
+    font-size: 0.95rem;
+  }
+  .stats-description p {
+    font-size: 0.94rem;
+  }
+}
+
+@media (min-width: 1460px) {
+  .stat-label {
+    font-size: 1.1rem;
+  }
+
+  .stats-description p {
+    font-size: 0.95rem;
   }
 }

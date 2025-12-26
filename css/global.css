@@ -1,9 +1,12 @@
-*,body,html{
-    /* padding-inline: 300px; */
-/* padding-left: 50px; */
-
+*,
+body,
+html {
+  /* padding-inline: 300px; */
+  /* padding-left: 50px; */
 }
 
-body{
+@media (min-width: 768px) {
+  body{
     overflow-x: hidden;
+  }
 }

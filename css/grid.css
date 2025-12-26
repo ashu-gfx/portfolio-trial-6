@@ -1,16 +1,22 @@
+.grid-container {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .grid {
-  width: 110vw;
+  left: 0;
+  width: 100vw;
   height: 130vh;
   position: absolute; /* IMPORTANT */
-  overflow: hidden; /* CROPS CHILD */
+  overflow: hidden;
+  z-index: -1;
 }
 
 .grid-overlay-hero {
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  inset: -10rem; /* can extend outside */
+  width: 190%;
+  height: 100%;
   opacity: 0.4;
   background-image: linear-gradient(#cbd5e1 1px, transparent 1px),
     linear-gradient(90deg, #cbd5e1 1px, transparent 1px);
@@ -18,13 +24,37 @@
 }
 
 @media (min-width: 1024px) {
- .grid{
-    width: 120vw;
- }
+  .grid {
+    /* left: 0%; */
+    height: 130vh;
+  }
+
+  .grid-container {
+    /* height: 130vh; */
+  }
 }
 
 @media (min-width: 1200px) {
- .grid{
-    width: 112vw;
- }
+  .grid {
+    left: 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    height: 130vh;
+  }
+}
+
+@media (min-width: 750px) {
+  .grid {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 550px) {
+  .grid {
+        left: 0;
+    height: 100vh;
+  }
 }

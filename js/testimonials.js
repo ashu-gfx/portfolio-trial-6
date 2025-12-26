@@ -23,8 +23,8 @@ const testimonials = [
 
 const marqueeTrack = document.getElementById('marqueeTrack')
 
-// Duplicate array 3 times for infinite scroll
-const repeated = [...testimonials, ...testimonials, ...testimonials]
+// ✅ Duplicate ONLY twice
+const repeated = [...testimonials, ...testimonials]
 
 repeated.forEach(item => {
   const div = document.createElement('div')
@@ -34,6 +34,28 @@ repeated.forEach(item => {
       <img src="${item.avatar}" class="testimonial-avatar" />
       <span class="testimonial-text">${item.text}</span>
     `
-
   marqueeTrack.appendChild(div)
 })
+
+/* ---------------------------
+     START MARQUEE ANIMATION
+  ---------------------------- */
+
+let x = 0
+const speed = 0.5 // increase = faster
+
+let paused = false
+
+marqueeTrack.addEventListener('mouseenter', () => (paused = true))
+marqueeTrack.addEventListener('mouseleave', () => (paused = false))
+
+function animate () {
+  if (!paused) {
+    x -= speed
+    marqueeTrack.style.transform = `translateX(${x}px)`
+    if (Math.abs(x) >= marqueeTrack.scrollWidth / 2) x = 0
+  }
+  requestAnimationFrame(animate)
+}
+
+animate()

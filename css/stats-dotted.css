@@ -10,8 +10,41 @@ body {
   /* padding: 80px 20px; */
   max-width: 1440px;
   margin: auto;
-  padding-left: 3.8rem;
-  padding-right: 3.8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: 10rem;
+}
+
+@media (min-width: 300px) {
+  .footer-stats {
+    margin-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .footer-stats {
+    margin-top: 3rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-stats {
+    margin-top: 8rem;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-stats {
+    margin-top: 8rem;
+    padding-left: 3.3rem;
+    padding-right: 3.1rem;
+  }
 }
 
 .headline {
@@ -22,19 +55,144 @@ body {
 
 @media (min-width: 1200px) {
   .headline {
-    max-width: 760px;
+    max-width: 850px;
+  }
+}
+
+@media (min-width: 300px) {
+  .headline {
+    margin: 0 auto 40px;
   }
 }
 
 .headline h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  line-height: 1.3;
+  line-height: 0rem;
   font-weight: 500;
+}
+
+@media (min-width: 300px) {
+  .headline h2 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 340px) {
+  .headline h2 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 370px) {
+  .headline h2 {
+    font-size: 1.45rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 400px) {
+  .headline h2 {
+    font-size: 1.55rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 430px) {
+  .headline h2 {
+    font-size: 1.65rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 470px) {
+  .headline h2 {
+    font-size: 1.85rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 500px) {
+  .headline h2 {
+    font-size: 1.95rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 525px) {
+  .headline h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 550px) {
+  .headline h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 613px) {
+  .headline h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 620px) {
+  .headline h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 650px) {
+  .headline h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 670px) {
+  .headline h2 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .headline h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 719px) {
+  .headline h2 {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 834px) {
+  .headline h2 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .headline h2 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
 }
 
 .accent {
   color: #ff4d4d;
+  overflow: hidden;
 }
 
 /* Cards grid */
@@ -56,14 +214,139 @@ body {
   font-family: 'Poppins', sans-serif;
   border: 2px dashed #ccc;
   border-radius: 1.4rem;
-  padding: 40px;
+
   transition: background 0.3s ease;
+}
+
+@media (min-width: 300px) {
+  .card {
+    padding: 1.4rem;
+  }
+
+  .number-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .number {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 3.7rem;
+    font-weight: 400;
+  }
+
+  .plus,
+  .percent {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 54px;
+    color: #ff4d4d;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    /* padding: 1.4rem; */
+    padding: 1.8rem;
+  }
+
+  .number-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .number {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+  }
+
+  .plus,
+  .percent {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 3rem;
+    color: #ff4d4d;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+
+  .card h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    font-size: 0.6rem;
+    color: #666;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 840px) {
+  .number-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .number {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 3.7rem;
+    font-weight: 400;
+  }
+
+  .plus,
+  .percent {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 54px;
+    color: #ff4d4d;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+
+  .card h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.6;
+  }
 }
 
 .card:hover {
   background: #f9f9f9;
 }
 
+.word {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+
+
+/* Word mask */
+
+/* 
 .number-row {
   display: flex;
   align-items: flex-start;
@@ -95,4 +378,4 @@ body {
   font-size: 14px;
   color: #666;
   line-height: 1.6;
-}
+} */
