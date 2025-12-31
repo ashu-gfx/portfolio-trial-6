@@ -70,7 +70,7 @@ const throttledHandler = throttleFunction((e) => {
   const x = e.touches ? e.touches[0].clientX : e.clientX;
   const y = e.touches ? e.touches[0].clientY : e.clientY;
   handleImageCreation(x, y);
-}, 200); // Reduced delay for more responsiveness on fast moves
+}, 100); // Reduced delay for more responsiveness on fast moves
 
 heroText.addEventListener('mousemove', throttledHandler);
 heroText.addEventListener('touchmove', throttledHandler, { passive: true });
